@@ -4,5 +4,6 @@
 target 'RealmBasic' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'RealmSwift'
+  pod 'RealmSwift', git: 'https://github.com/realm/realm-cocoa.git', branch: 'master', submodules: true
+  pod 'Realm', git: 'https://github.com/realm/realm-cocoa.git', branch: 'master', submodules: true
 end
