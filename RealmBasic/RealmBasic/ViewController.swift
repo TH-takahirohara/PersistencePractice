@@ -14,12 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let realm = try! Realm()
-        let results = realm.objects(Person.self)
-        print("results.count: \(results.count)")
-        
         try! realm.write {
-            realm.add(Person())
+            realm.add([Person(value: ["name": "A", "age": 20]),
+                       Person(value: ["name": "B", "age": 20, "countryCode": "jp"]),
+                       Person(value: ["name": "C", "age": 15, "countryCode": "jp"])])
         }
-        print("results.count: \(results.count)")
+        
+        var results = realm.objects(Person.self)
+        results = results.filter("age >= 18 && countryCode = 'jp'")
+        print("results: \(results)")
     }
 }
