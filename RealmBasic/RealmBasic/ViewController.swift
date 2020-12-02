@@ -15,13 +15,18 @@ class ViewController: UIViewController {
         
         let realm = try! Realm()
         try! realm.write {
+            realm.deleteAll()
+        }
+        try! realm.write {
             realm.add([Person(value: ["name": "A", "age": 20]),
                        Person(value: ["name": "B", "age": 20, "countryCode": "jp"]),
                        Person(value: ["name": "C", "age": 15, "countryCode": "jp"])])
         }
         
+        let code = "jp"
+        let age = 18
         var results = realm.objects(Person.self)
-        results = results.filter("age >= 18 && countryCode = 'jp'")
+        results = results.filter("age >= %@ && countryCode = %a", age, code)
         print("results: \(results)")
     }
 }
