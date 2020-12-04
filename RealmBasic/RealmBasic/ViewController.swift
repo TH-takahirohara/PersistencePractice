@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testRealmNotification()
+        testObjectNotification()
     }
     
     func testRealmNotification() {
@@ -32,6 +32,35 @@ class ViewController: UIViewController {
         
         try! realm.write {
             realm.add(Person(value: ["name": "test"]))
+        }
+    }
+    
+    func testObjectNotification() {
+        let realm = try! Realm()
+        
+        let object = Cat(value: ["name": "Tama"])
+        
+        try! realm.write {
+            realm.add(object)
+        }
+        
+        token = object.observe({ (change) in
+            switch change {
+            case .change(let properties):
+                print("object value changed: 変更がありました")
+            case .deleted:
+                print("object deleted: 削除されました")
+            case .error(let error):
+                print("error")
+            }
+        })
+        
+        try! realm.write {
+            object.name = "Pochi"
+        }
+        
+        try! realm.write {
+            realm.delete(object)
         }
     }
 }
