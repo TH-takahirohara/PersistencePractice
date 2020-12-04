@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        testRealmNotification()
+    }
+    
+    func testRealmNotification() {
         let realm = try! Realm()
         
         token = realm.observe({ (notification, realm) in
