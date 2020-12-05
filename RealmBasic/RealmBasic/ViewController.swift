@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         testObjectNotification()
     }
     
+    deinit {
+        token?.invalidate()
+    }
+    
     func testRealmNotification() {
         let realm = try! Realm()
         
