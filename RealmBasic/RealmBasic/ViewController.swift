@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testObjectNotification()
+        migration()
     }
     
     deinit {
@@ -66,5 +66,17 @@ class ViewController: UIViewController {
         try! realm.write {
             realm.delete(object)
         }
+    }
+    
+    func migration() {
+        var config = Realm.Configuration()
+        
+        config.migrationBlock = { (migration, oldSchemeVersion) in
+            print("migrated")
+        }
+        
+        config.schemaVersion = 1
+        
+//        let realm = try! Realm(configuration: config)
     }
 }
