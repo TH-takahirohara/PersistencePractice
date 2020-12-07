@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         })
         
         try! realm.write {
-            realm.add(Person(value: ["name": "test"]))
+            realm.add(Cat(value: ["name": "test"]))
         }
     }
     

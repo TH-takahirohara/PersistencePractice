@@ -8,14 +8,6 @@
 import Foundation
 import RealmSwift
 
-class Person: Object {
-    @objc dynamic var name = ""
-    @objc dynamic var age = 0
-    @objc dynamic var countryCode = ""
-    @objc dynamic var dog: Dog?
-    let cats = List<Cat>()
-}
-
 class Animal: Object {
     @objc dynamic var name = ""
     @objc dynamic var age = 0
