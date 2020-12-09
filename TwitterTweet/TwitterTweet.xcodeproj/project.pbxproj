@@ -13,6 +13,7 @@
 		18902CA0257FE6DD0064BDD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18902C9E257FE6DD0064BDD9 /* Main.storyboard */; };
 		18902CA2257FE6E40064BDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18902CA1257FE6E40064BDD9 /* Assets.xcassets */; };
 		18902CA5257FE6E40064BDD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18902CA3257FE6E40064BDD9 /* LaunchScreen.storyboard */; };
+		18902CAE25812A6C0064BDD9 /* TwitterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902CAD25812A6C0064BDD9 /* TwitterJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18902CA1257FE6E40064BDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18902CA4257FE6E40064BDD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18902CA6257FE6E40064BDD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18902CAD25812A6C0064BDD9 /* TwitterJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				18902C98257FE6DD0064BDD9 /* AppDelegate.swift */,
 				18902C9A257FE6DD0064BDD9 /* SceneDelegate.swift */,
 				18902C9C257FE6DD0064BDD9 /* ViewController.swift */,
+				18902CAD25812A6C0064BDD9 /* TwitterJSON.swift */,
 				18902C9E257FE6DD0064BDD9 /* Main.storyboard */,
 				18902CA1257FE6E40064BDD9 /* Assets.xcassets */,
 				18902CA3257FE6E40064BDD9 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18902C9D257FE6DD0064BDD9 /* ViewController.swift in Sources */,
+				18902CAE25812A6C0064BDD9 /* TwitterJSON.swift in Sources */,
 				18902C99257FE6DD0064BDD9 /* AppDelegate.swift in Sources */,
 				18902C9B257FE6DD0064BDD9 /* SceneDelegate.swift in Sources */,
 			);
