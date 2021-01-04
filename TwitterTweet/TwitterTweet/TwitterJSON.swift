@@ -8,6 +8,13 @@
 import Foundation
 
 struct TwitterJSON {
+    static let tweet: [String: Any] = [
+        "id": 20,
+        "created_at": "Tue Mar 21 20:50:14 +0000 2006",
+        "text": "just setting up my twttr",
+        "user": user
+    ]
+    
     static let user: [String: Any] = [
         "id": 12,
         "name": "Jack Dorsey",
