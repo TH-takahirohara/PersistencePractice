@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		188E2E3D25A4B6A5004E8C9E /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E2E3C25A4B6A5004E8C9E /* TimeLineViewController.swift */; };
 		18902C99257FE6DD0064BDD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902C98257FE6DD0064BDD9 /* AppDelegate.swift */; };
 		18902C9B257FE6DD0064BDD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902C9A257FE6DD0064BDD9 /* SceneDelegate.swift */; };
 		18902C9D257FE6DD0064BDD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902C9C257FE6DD0064BDD9 /* ViewController.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		188E2E3C25A4B6A5004E8C9E /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		18902C95257FE6DC0064BDD9 /* TwitterTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18902C98257FE6DD0064BDD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18902C9A257FE6DD0064BDD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				18902C98257FE6DD0064BDD9 /* AppDelegate.swift */,
-				188E2E3C25A4B6A5004E8C9E /* TimeLineViewController.swift */,
 				18902C9A257FE6DD0064BDD9 /* SceneDelegate.swift */,
 				18902C9C257FE6DD0064BDD9 /* ViewController.swift */,
 				18902CAD25812A6C0064BDD9 /* TwitterJSON.swift */,
@@ -219,7 +216,6 @@
 			files = (
 				18902C9D257FE6DD0064BDD9 /* ViewController.swift in Sources */,
 				18902CAE25812A6C0064BDD9 /* TwitterJSON.swift in Sources */,
-				188E2E3D25A4B6A5004E8C9E /* TimeLineViewController.swift in Sources */,
 				18902C99257FE6DD0064BDD9 /* AppDelegate.swift in Sources */,
 				18A0A37825A36BA20031A307 /* Tweet.swift in Sources */,
 				18C4791625A21C26004DA7B9 /* User.swift in Sources */,
