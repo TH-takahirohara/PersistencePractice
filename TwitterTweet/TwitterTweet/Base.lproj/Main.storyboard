@@ -75,6 +75,13 @@
                                         <constraint firstAttribute="trailing" secondItem="SEL-Fi-r8c" secondAttribute="trailing" id="kSk-xZ-vZc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bodyLabel" destination="sKY-nD-Fj2" id="xRJ-hn-RfB"/>
+                                    <outlet property="dateLabel" destination="foC-l9-q9M" id="G7l-hx-4fS"/>
+                                    <outlet property="nameLabel" destination="er5-aa-TCl" id="DJL-nt-Jbc"/>
+                                    <outlet property="screenNameLabel" destination="7Wp-R5-DQ2" id="LFl-CC-h64"/>
+                                    <outlet property="userImageView" destination="uoV-4A-9ud" id="ExJ-9O-7m2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
