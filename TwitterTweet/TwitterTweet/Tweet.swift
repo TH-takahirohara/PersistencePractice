@@ -14,6 +14,11 @@ class Tweet: Object {
     @objc dynamic var text = ""
     @objc dynamic var user: User?
     
+    var date: String {
+        let date = TwitterDateFormatter.api.date(from: created_at)!
+        return TwitterDateFormatter.absolute.string(from: date)
+    }
+    
     override class func primaryKey() -> String? {
         return "id"
     }
