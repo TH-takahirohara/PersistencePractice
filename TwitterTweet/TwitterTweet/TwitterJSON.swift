@@ -8,6 +8,10 @@
 import Foundation
 
 struct TwitterJSON {
+    static var tweetID: Int {
+        return tweet["id"] as! Int
+    }
+    
     static let tweet: [String: Any] = [
         "id": 20,
         "created_at": "Tue Mar 21 20:50:14 +0000 2006",
